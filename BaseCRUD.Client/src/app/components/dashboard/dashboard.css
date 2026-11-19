@@ -1,0 +1,33 @@
+.employee-info {
+  display: flex;
+  list-style-type: none;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  justify-content: space-around;
+}
+
+.active {
+  color: green;
+  font-weight: bold;
+}
+
+.leave {
+  color: orange;
+  font-weight: bold;
+}
+
+.resigned {
+  color: red;
+  font-weight: bold;
+}
+
+button {
+  font-size: 12px;
+  height: 30px;
+  width: 80px;
+  background-color: crimson;
+  color: whitesmoke;
+  margin: 20px;
+}

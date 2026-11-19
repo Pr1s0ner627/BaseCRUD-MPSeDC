@@ -1,0 +1,47 @@
+<div class="register-container">
+  <div class="register-card">
+    <h2>Create an Account</h2>
+    <p>Register to Access</p>
+
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="displayName">Username: </label>
+        <input id="displayName" type="text" formControlName="displayName" placeholder="Enter Your Name" />
+        @if (registerForm.get('displayName')?.touched && registerForm.get('displayName')?.invalid) {
+        <small class="error">
+          Username is Required.
+        </small>
+        }
+      </div>
+      <div class="form-group">
+        <label for="email">Email: </label>
+        <input id="email" type="email" formControlName="email" placeholder="Enter Your Email" />
+        @if (registerForm.get('email')?.touched && registerForm.get('email')?.invalid) {
+        <small class="error">
+          Email is Required.
+        </small>
+        }
+      </div>
+      <div class="form-group">
+        <label for="password">Password: </label>
+        <input id="password" type="password" formControlName="password" placeholder="Enter Password" />
+        @if (registerForm.get('password')?.touched && registerForm.get('password')?.invalid) {
+        <small class="error">
+          Password is Required.
+        </small>
+        }
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password: </label>
+        <input id="confirmPassword" type="password" formControlName="confirmPassword" placeholder="Confirm Password" />
+        @if (registerForm.get('confirmPassword')?.touched && registerForm.hasError('passwordMismatch')) {
+        <small class="error">
+          Passwords do not match.
+        </small>
+        }
+      </div>
+
+      <button type="submit" [disabled]="registerForm.invalid">Register</button>
+    </form>
+  </div>
+</div>

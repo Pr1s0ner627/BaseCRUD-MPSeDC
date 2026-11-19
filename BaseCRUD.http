@@ -1,0 +1,6 @@
+@BaseCRUD_HostAddress = http://localhost:5209
+
+GET {{BaseCRUD_HostAddress}}/TasksCheck/
+Accept: application/json
+
+###

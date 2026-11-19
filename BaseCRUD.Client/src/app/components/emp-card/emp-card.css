@@ -1,0 +1,13 @@
+.emp-card {
+  justify-content: center;
+  height: 55px;
+  background-color: beige;
+}
+
+h3 {
+  color: darkslategrey;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px;
+  justify-items: center;
+}

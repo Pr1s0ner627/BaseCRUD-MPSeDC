@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DotNet Tutorials\\BaseCRUD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud\\basecrud.client\\src\\app\\services\\registration.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:basecrud.client\\src\\app\\services\\registration.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud\\basecrud.client\\src\\app\\components\\dashboard\\dashboard.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:basecrud.client\\src\\app\\components\\dashboard\\dashboard.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud\\basecrud.client\\src\\app\\components\\authorization\\authorization.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:basecrud.client\\src\\app\\components\\authorization\\authorization.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud\\basecrud.client\\src\\app\\app.routes.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:basecrud.client\\src\\app\\app.routes.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "registration.ts",
+              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD\\BaseCRUD.Client\\src\\app\\services\\registration.ts",
+              "RelativeDocumentMoniker": "BaseCRUD.Client\\src\\app\\services\\registration.ts",
+              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD\\BaseCRUD.Client\\src\\app\\services\\registration.ts",
+              "RelativeToolTip": "BaseCRUD.Client\\src\\app\\services\\registration.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-11-19T09:17:05.374Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "app.routes.ts",
+              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD\\BaseCRUD.Client\\src\\app\\app.routes.ts",
+              "RelativeDocumentMoniker": "BaseCRUD.Client\\src\\app\\app.routes.ts",
+              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD\\BaseCRUD.Client\\src\\app\\app.routes.ts",
+              "RelativeToolTip": "BaseCRUD.Client\\src\\app\\app.routes.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-11-19T06:19:40.209Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "authorization.ts",
+              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD\\BaseCRUD.Client\\src\\app\\components\\authorization\\authorization.ts",
+              "RelativeDocumentMoniker": "BaseCRUD.Client\\src\\app\\components\\authorization\\authorization.ts",
+              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD\\BaseCRUD.Client\\src\\app\\components\\authorization\\authorization.ts",
+              "RelativeToolTip": "BaseCRUD.Client\\src\\app\\components\\authorization\\authorization.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-11-18T12:06:58.035Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dashboard.ts",
+              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD\\BaseCRUD.Client\\src\\app\\components\\dashboard\\dashboard.ts",
+              "RelativeDocumentMoniker": "BaseCRUD.Client\\src\\app\\components\\dashboard\\dashboard.ts",
+              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD\\BaseCRUD.Client\\src\\app\\components\\dashboard\\dashboard.ts",
+              "RelativeToolTip": "BaseCRUD.Client\\src\\app\\components\\dashboard\\dashboard.ts",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-11-18T12:15:53.177Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

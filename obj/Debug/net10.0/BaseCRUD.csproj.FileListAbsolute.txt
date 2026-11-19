@@ -1,0 +1,13 @@
+C:\DotNet Tutorials\BaseCRUD\obj\Debug\net10.0\BaseCRUD.csproj.AssemblyReference.cache
+C:\DotNet Tutorials\BaseCRUD\obj\Debug\net10.0\HotReload\Microsoft.NET.Sdk.BlazorWeb.HotReload.lib.module.js
+C:\DotNet Tutorials\BaseCRUD\obj\Debug\net10.0\HotReload\Microsoft.NET.Sdk.BlazorWeb.HotReload.BrowserTools.js
+C:\DotNet Tutorials\BaseCRUD\obj\Debug\net10.0\HotReload\Microsoft.NET.Sdk.BlazorWeb.HotReload.BrowserTools.Config.js
+C:\DotNet Tutorials\BaseCRUD\obj\Debug\net10.0\HotReload\browser-tools-key.public.json
+C:\DotNet Tutorials\BaseCRUD\obj\Debug\net10.0\HotReload\browser-tools-key.private.json
+C:\DotNet Tutorials\BaseCRUD\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\DotNet Tutorials\BaseCRUD\obj\Debug\net10.0\BaseCRUD.GeneratedMSBuildEditorConfig.editorconfig
+C:\DotNet Tutorials\BaseCRUD\obj\Debug\net10.0\BaseCRUD.AssemblyInfoInputs.cache
+C:\DotNet Tutorials\BaseCRUD\obj\Debug\net10.0\BaseCRUD.AssemblyInfo.cs
+C:\DotNet Tutorials\BaseCRUD\obj\Debug\net10.0\BaseCRUD.csproj.CoreCompileInputs.cache
+C:\DotNet Tutorials\BaseCRUD\obj\Debug\net10.0\BaseCRUD.MvcApplicationPartsAssemblyInfo.cs
+C:\DotNet Tutorials\BaseCRUD\obj\Debug\net10.0\BaseCRUD.MvcApplicationPartsAssemblyInfo.cache
