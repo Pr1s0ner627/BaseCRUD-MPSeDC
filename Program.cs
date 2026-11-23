@@ -38,8 +38,11 @@ builder.Services.AddOptions<JWTSettings>()
 
 builder.Services.AddAuthentication(options =>
 {
-    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultScheme = "Smart";
+    options.DefaultChallengeScheme = "Smart";
+    }).AddPolicyScheme("Smart","CookieOrJWT", o =>
+    {
+        o.ForwardDefaultSelector = ctx => ctx.Request.Headers.Authorization.ToString().StartsWith("Bearer ", StringComparison.OrdinalIgnoreCase) ? JwtBearerDefaults.AuthenticationScheme : CookieAuthenticationDefaults.AuthenticationScheme;
     }).AddCookie(options =>
         {
             options.LoginPath = "/auth/login";
@@ -96,12 +99,15 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-builder.Services.AddAuthorizationBuilder()
-    .AddPolicy("CookieOrJWT", policy =>
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("CookieOrJWT", policy =>
     {
-        policy.AddAuthenticationSchemes(CookieAuthenticationDefaults.AuthenticationScheme, JwtBearerDefaults.AuthenticationScheme);
+        policy.AddAuthenticationSchemes(
+            CookieAuthenticationDefaults.AuthenticationScheme, JwtBearerDefaults.AuthenticationScheme);
         policy.RequireAuthenticatedUser();
     });
+});
 
 var app = builder.Build();
 

@@ -116,98 +116,15 @@
   },
   {
     "ContainingType": "BaseCRUD.Controllers.EmployeeController",
-    "Method": "GetAll",
-    "RelativePath": "Employee",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BaseCRUD.Controllers.EmployeeController",
-    "Method": "AddEmployee",
-    "RelativePath": "Employee",
+    "Method": "Enter",
+    "RelativePath": "Employee/AuthEntry",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "newEmployee",
-        "Type": "BaseCRUD.Databases.Employee",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BaseCRUD.Databases.Employee",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "BaseCRUD.Controllers.EmployeeController",
-    "Method": "GetEmployee",
-    "RelativePath": "Employee/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BaseCRUD.Databases.Employee",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "BaseCRUD.Controllers.EmployeeController",
-    "Method": "RemoveEmployee",
-    "RelativePath": "Employee/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BaseCRUD.Controllers.EmployeeController",
-    "Method": "UpdateEmployee",
-    "RelativePath": "Employee/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "updatedEmployee",
-        "Type": "BaseCRUD.Databases.Employee",
+        "Name": "loginRequest",
+        "Type": "BaseCRUD.CookieAuth.Models.LoginRequest",
         "IsRequired": true
       }
     ],

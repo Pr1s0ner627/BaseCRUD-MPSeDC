@@ -1,78 +1,137 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc;
+﻿using BaseCRUD.CookieAuth.Models;
+using BaseCRUD.CookieAuth.Repos;
+using BaseCRUD.CookieAuth.Services;
 using BaseCRUD.Databases;
+using BaseCRUD.JWTAuth.Controllers;
+using BaseCRUD.JWTAuth.Services;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace BaseCRUD.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize(Policy = "CookieOrJWT")]
 
     public class EmployeeController : ControllerBase
     {
-        private readonly DatabaseContext databaseContext;
+        private readonly JWTService _jWTService;
+        private readonly PasswordService _passwordService;
+        private readonly IUserRepository _userRepository;
 
-        public EmployeeController(DatabaseContext databaseContext)
+        public EmployeeController(PasswordService passwordService, IUserRepository userRepository, JWTService jWTService)
         {
-            this.databaseContext = databaseContext;
+            _passwordService = passwordService;
+            _userRepository = userRepository;
+            _jWTService = jWTService; 
         }
 
-        [HttpGet]
-        public async Task<ActionResult> GetAll()
+        
+        [AllowAnonymous]
+        [HttpPost("AuthEntry")]
+        public async Task<IActionResult> Enter(LoginRequest loginRequest)
         {
-            var employees = await databaseContext.Employees.ToListAsync();
-            return Ok(employees);
+            if (string.IsNullOrWhiteSpace(loginRequest.Email) || string.IsNullOrWhiteSpace(loginRequest.Password))
+                return BadRequest("Email and Password are required.");
+
+            var normalizedEmail = loginRequest.Email.Trim().ToLowerInvariant();
+            var user = await _userRepository.GetByEmailAsync(normalizedEmail);
+            if (user == null || !user.IsActive)
+                return Unauthorized("Invalid email or password.");
+
+            var isPasswordValid = _passwordService.VerifyPassword(loginRequest.Password, user.PasswordHash);
+            if (!isPasswordValid)
+                return Unauthorized("Invalid email or password.");
+
+            List<Claim> claims = [
+                new(ClaimTypes.NameIdentifier, user.UserId.ToString()),
+                new(ClaimTypes.Name, user.DisplayName),
+                new(ClaimTypes.Email, user.NormalizedEmail)];
+
+            var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+            var principal = new ClaimsPrincipal(identity);
+            var AccessToken = _jWTService.GenerateToken(user);
+
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, new AuthenticationProperties
+            {
+                IsPersistent = true,
+                AllowRefresh = true,
+                ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(15)
+            });
+
+            return Ok(new
+            {
+                Message = "Login successful.",
+                Token = AccessToken,
+                user.UserId,
+                user.Email,
+                user.DisplayName
+                
+            });
         }
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Employee>> GetEmployee(int id)
-        {
-            var entry = await databaseContext.Employees.FirstOrDefaultAsync(x => x.Id == id);
 
-            if (entry == null)
-                return NotFound();
+        //[HttpGet]
+        //public async Task<ActionResult> GetAll()
+        //{
+        //    var employees = await databaseContext.Employees.ToListAsync();
+        //    return Ok(employees);
+        //}
 
-            return Ok(entry);
-        }
+        //[HttpGet("{id}")]
+        //public async Task<ActionResult<Employee>> GetEmployee(int id)
+        //{
+        //    var entry = await databaseContext.Employees.FirstOrDefaultAsync(x => x.Id == id);
 
-        [HttpDelete("{id}")]
-        public async Task<ActionResult> RemoveEmployee(int id)
-        {
-            var caseToRemove = await databaseContext.Employees.FirstOrDefaultAsync(x => x.Id == id);
-            if (caseToRemove == null)
-                return NotFound();
+        //    if (entry == null)
+        //        return NotFound();
 
-            databaseContext.Employees.Remove(caseToRemove);
-            await databaseContext.SaveChangesAsync();
+        //    return Ok(entry);
+        //}
 
-            return NoContent();
-        }
+        //[HttpDelete("{id}")]
+        //public async Task<ActionResult> RemoveEmployee(int id)
+        //{
+        //    var caseToRemove = await databaseContext.Employees.FirstOrDefaultAsync(x => x.Id == id);
+        //    if (caseToRemove == null)
+        //        return NotFound();
 
-        [HttpPost]
-        public async Task<ActionResult<Employee>> AddEmployee(Employee newEmployee)
-        {
-            databaseContext.Employees.Add(newEmployee);
-            databaseContext.SaveChangesAsync();
+        //    databaseContext.Employees.Remove(caseToRemove);
+        //    await databaseContext.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetEmployee), new { id = newEmployee.Id }, newEmployee);
-        }
+        //    return NoContent();
+        //}
 
-        [HttpPut("{id}")]
-        public async Task<ActionResult> UpdateEmployee([FromRoute] int id, [FromBody] Employee updatedEmployee)
-        {
-            var employeeToUpdate = await databaseContext.Employees.FirstOrDefaultAsync(x => x.Id == id);
-            if (employeeToUpdate == null)
-                return NotFound();
+        //[HttpPost]
+        //public async Task<ActionResult<Employee>> AddEmployee(Employee newEmployee)
+        //{
+        //    databaseContext.Employees.Add(newEmployee);
+        //    databaseContext.SaveChangesAsync();
 
-            employeeToUpdate.Name = updatedEmployee.Name;
-            employeeToUpdate.Email = updatedEmployee.Email;
-            employeeToUpdate.Designation = updatedEmployee.Designation;
-            employeeToUpdate.Salary = updatedEmployee.Salary;
-            employeeToUpdate.DepartmentId = updatedEmployee.DepartmentId;
-            employeeToUpdate.ManagerId = updatedEmployee.ManagerId;
-            employeeToUpdate.IsActive = updatedEmployee.IsActive;
+        //    return CreatedAtAction(nameof(GetEmployee), new { id = newEmployee.Id }, newEmployee);
+        //}
 
-            await databaseContext.SaveChangesAsync();
-            return Ok();
-        }
+        //[HttpPut("{id}")]
+        //public async Task<ActionResult> UpdateEmployee([FromRoute] int id, [FromBody] Employee updatedEmployee)
+        //{
+        //    var employeeToUpdate = await databaseContext.Employees.FirstOrDefaultAsync(x => x.Id == id);
+        //    if (employeeToUpdate == null)
+        //        return NotFound();
+
+        //    employeeToUpdate.Name = updatedEmployee.Name;
+        //    employeeToUpdate.Email = updatedEmployee.Email;
+        //    employeeToUpdate.Designation = updatedEmployee.Designation;
+        //    employeeToUpdate.Salary = updatedEmployee.Salary;
+        //    employeeToUpdate.DepartmentId = updatedEmployee.DepartmentId;
+        //    employeeToUpdate.ManagerId = updatedEmployee.ManagerId;
+        //    employeeToUpdate.IsActive = updatedEmployee.IsActive;
+
+        //    await databaseContext.SaveChangesAsync();
+        //    return Ok();
+        //}
     }
 }

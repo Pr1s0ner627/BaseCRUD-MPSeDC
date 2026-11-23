@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using BaseCRUD.CookieAuth.Repos;
 using BaseCRUD.CookieAuth.Models;
 using BaseCRUD.JWTAuth.Services;
@@ -73,7 +72,7 @@ namespace BaseCRUD.JWTAuth.Controllers
             if (!isPasswordValid)
                 return Unauthorized("Invalid email or password.");
             
-var token = _jwtService.GenerateToken(user);
+            var token = _jwtService.GenerateToken(user);
             var refreshToken = await _refreshTokenService.GenerateRefreshTokenAsync(user.UserId);
             
             //Response.Headers.Add("AccessToken", token);

@@ -71,7 +71,6 @@ namespace BaseCRUD.CookieAuth.Controllers
                 new(ClaimTypes.Email, user.Email),
                 new(ClaimTypes.Name, user.DisplayName)];
               
-
             var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             var principal = new ClaimsPrincipal(identity);
 
