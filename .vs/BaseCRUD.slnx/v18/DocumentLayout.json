@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\DotNet Tutorials\\BaseCRUD\\",
+  "WorkspaceRootPath": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud\\jwtauth\\controllers\\jwtauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\cookieauth\\repos\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:cookieauth\\repos\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\jwtauth\\controllers\\jwtauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:jwtauth\\controllers\\jwtauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud\\cookieauth\\controllers\\cookieauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\cookieauth\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:cookieauth\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\cookieauth\\controllers\\cookieauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:cookieauth\\controllers\\cookieauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud\\cookieauth\\repos\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:cookieauth\\repos\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,27 +38,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD\\CookieAuth\\Repos\\UserRepository.cs",
+              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\CookieAuth\\Repos\\UserRepository.cs",
               "RelativeDocumentMoniker": "CookieAuth\\Repos\\UserRepository.cs",
-              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD\\CookieAuth\\Repos\\UserRepository.cs",
+              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\CookieAuth\\Repos\\UserRepository.cs",
               "RelativeToolTip": "CookieAuth\\Repos\\UserRepository.cs",
-              "ViewState": "AgIAAAIAAABAMzMzMzMbwG8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAF4AAAAAzczMzMwswDIAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-19T09:43:28.42Z",
+              "WhenOpened": "2026-11-20T11:55:56.567Z",
               "EditorCaption": "",
               "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "PasswordService.cs",
+              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\CookieAuth\\Services\\PasswordService.cs",
+              "RelativeDocumentMoniker": "CookieAuth\\Services\\PasswordService.cs",
+              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\CookieAuth\\Services\\PasswordService.cs",
+              "RelativeToolTip": "CookieAuth\\Services\\PasswordService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-20T11:48:44.767Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JWTAuthController.cs",
+              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\JWTAuth\\Controllers\\JWTAuthController.cs",
+              "RelativeDocumentMoniker": "JWTAuth\\Controllers\\JWTAuthController.cs",
+              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\JWTAuth\\Controllers\\JWTAuthController.cs",
+              "RelativeToolTip": "JWTAuth\\Controllers\\JWTAuthController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAiwEUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-20T11:02:42.403Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD\\Program.cs",
+              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD\\Program.cs",
+              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADUAAAAAMzMzMzMbwBUAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAACAZmZmZmYawC4AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-19T09:26:45.107Z",
               "EditorCaption": "",
@@ -62,29 +94,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CookieAuthController.cs",
-              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD\\CookieAuth\\Controllers\\CookieAuthController.cs",
+              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\CookieAuth\\Controllers\\CookieAuthController.cs",
               "RelativeDocumentMoniker": "CookieAuth\\Controllers\\CookieAuthController.cs",
-              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD\\CookieAuth\\Controllers\\CookieAuthController.cs",
+              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\CookieAuth\\Controllers\\CookieAuthController.cs",
               "RelativeToolTip": "CookieAuth\\Controllers\\CookieAuthController.cs",
-              "ViewState": "AgIAAEcAAADAzMzMzMwkwFIAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAiwFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-19T09:26:30.866Z",
-              "EditorCaption": "",
-              "OwnerCaption": "%2"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "JWTAuthController.cs",
-              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD\\JWTAuth\\Controllers\\JWTAuthController.cs",
-              "RelativeDocumentMoniker": "JWTAuth\\Controllers\\JWTAuthController.cs",
-              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD\\JWTAuth\\Controllers\\JWTAuthController.cs",
-              "RelativeToolTip": "JWTAuth\\Controllers\\JWTAuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-19T09:24:51.64Z",
               "EditorCaption": "",
               "OwnerCaption": "%2"
             }

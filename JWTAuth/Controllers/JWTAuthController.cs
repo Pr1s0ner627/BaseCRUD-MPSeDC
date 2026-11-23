@@ -66,11 +66,14 @@ namespace BaseCRUD.JWTAuth.Controllers
             }
             var normalizedEmail = loginRequest.Email.Trim().ToLowerInvariant();
             var user = await _userRepository.GetByEmailAsync(normalizedEmail);
+            if (user == null || !user.IsActive)
+                return Unauthorized("Invalid email or password.");
+
             var isPasswordValid = _passwordService.VerifyPassword(loginRequest.Password, user.PasswordHash);
-            if (user == null || !user.IsActive || !isPasswordValid)
-                return Unauthorized("Invalid email or password."); 
+            if (!isPasswordValid)
+                return Unauthorized("Invalid email or password.");
             
-            var token = _jwtService.GenerateToken(user);
+var token = _jwtService.GenerateToken(user);
             var refreshToken = await _refreshTokenService.GenerateRefreshTokenAsync(user.UserId);
             
             //Response.Headers.Add("AccessToken", token);

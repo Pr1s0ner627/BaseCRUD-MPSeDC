@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UetLCatabYk=",
+  "dgSpecHash": "npWXRz+SvVA=",
   "success": true,
-  "projectFilePath": "C:\\DotNet Tutorials\\BaseCRUD\\BaseCRUD.csproj",
+  "projectFilePath": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\BaseCRUD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\g1mw9\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\g1mw9\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",

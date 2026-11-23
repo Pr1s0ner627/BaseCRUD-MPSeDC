@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\DotNet Tutorials\\BaseCRUD\\",
+  "WorkspaceRootPath": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud\\basecrud.client\\src\\app\\services\\registration.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:basecrud.client\\src\\app\\services\\registration.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\jwtauth\\controllers\\jwtauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:jwtauth\\controllers\\jwtauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud\\basecrud.client\\src\\app\\components\\dashboard\\dashboard.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:basecrud.client\\src\\app\\components\\dashboard\\dashboard.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\cookieauth\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:cookieauth\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud\\basecrud.client\\src\\app\\components\\authorization\\authorization.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:basecrud.client\\src\\app\\components\\authorization\\authorization.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\cookieauth\\controllers\\cookieauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:cookieauth\\controllers\\cookieauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud\\basecrud.client\\src\\app\\app.routes.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:basecrud.client\\src\\app\\app.routes.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,57 +34,57 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PasswordService.cs",
+              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\CookieAuth\\Services\\PasswordService.cs",
+              "RelativeDocumentMoniker": "CookieAuth\\Services\\PasswordService.cs",
+              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\CookieAuth\\Services\\PasswordService.cs",
+              "RelativeToolTip": "CookieAuth\\Services\\PasswordService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-20T11:48:44.767Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "registration.ts",
-              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD\\BaseCRUD.Client\\src\\app\\services\\registration.ts",
-              "RelativeDocumentMoniker": "BaseCRUD.Client\\src\\app\\services\\registration.ts",
-              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD\\BaseCRUD.Client\\src\\app\\services\\registration.ts",
-              "RelativeToolTip": "BaseCRUD.Client\\src\\app\\services\\registration.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-11-19T09:17:05.374Z",
+              "Title": "JWTAuthController.cs",
+              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\JWTAuth\\Controllers\\JWTAuthController.cs",
+              "RelativeDocumentMoniker": "JWTAuth\\Controllers\\JWTAuthController.cs",
+              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\JWTAuth\\Controllers\\JWTAuthController.cs",
+              "RelativeToolTip": "JWTAuth\\Controllers\\JWTAuthController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAiwFAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-20T11:02:42.403Z",
               "EditorCaption": "",
               "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "app.routes.ts",
-              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD\\BaseCRUD.Client\\src\\app\\app.routes.ts",
-              "RelativeDocumentMoniker": "BaseCRUD.Client\\src\\app\\app.routes.ts",
-              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD\\BaseCRUD.Client\\src\\app\\app.routes.ts",
-              "RelativeToolTip": "BaseCRUD.Client\\src\\app\\app.routes.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-11-19T06:19:40.209Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAB0AAACAZmZmZmYawC4AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T09:26:45.107Z",
               "EditorCaption": "",
               "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "authorization.ts",
-              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD\\BaseCRUD.Client\\src\\app\\components\\authorization\\authorization.ts",
-              "RelativeDocumentMoniker": "BaseCRUD.Client\\src\\app\\components\\authorization\\authorization.ts",
-              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD\\BaseCRUD.Client\\src\\app\\components\\authorization\\authorization.ts",
-              "RelativeToolTip": "BaseCRUD.Client\\src\\app\\components\\authorization\\authorization.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-11-18T12:06:58.035Z",
-              "EditorCaption": "",
-              "OwnerCaption": "%2"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dashboard.ts",
-              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD\\BaseCRUD.Client\\src\\app\\components\\dashboard\\dashboard.ts",
-              "RelativeDocumentMoniker": "BaseCRUD.Client\\src\\app\\components\\dashboard\\dashboard.ts",
-              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD\\BaseCRUD.Client\\src\\app\\components\\dashboard\\dashboard.ts",
-              "RelativeToolTip": "BaseCRUD.Client\\src\\app\\components\\dashboard\\dashboard.ts",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-11-18T12:15:53.177Z",
+              "Title": "CookieAuthController.cs",
+              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\CookieAuth\\Controllers\\CookieAuthController.cs",
+              "RelativeDocumentMoniker": "CookieAuth\\Controllers\\CookieAuthController.cs",
+              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\CookieAuth\\Controllers\\CookieAuthController.cs",
+              "RelativeToolTip": "CookieAuth\\Controllers\\CookieAuthController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAiwFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T09:26:30.866Z",
               "EditorCaption": "",
               "OwnerCaption": "%2"
             }
