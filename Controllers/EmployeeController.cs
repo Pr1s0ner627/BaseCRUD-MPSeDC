@@ -60,7 +60,6 @@ namespace BaseCRUD.Controllers
             {
                 IsPersistent = true,
                 AllowRefresh = true,
-                ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(15)
             });
 
             return Ok(new

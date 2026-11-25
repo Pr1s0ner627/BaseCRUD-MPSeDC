@@ -1,20 +1,22 @@
-using System.Text;
-using Scalar.AspNetCore;
-using BaseCRUD.Databases;
 using BaseCRUD.CookieAuth.Data;
 using BaseCRUD.CookieAuth.Repos;
 using BaseCRUD.CookieAuth.Services;
+using BaseCRUD.Databases;
 using BaseCRUD.JWTAuth.Models;
-using BaseCRUD.JWTAuth.Services;
 using BaseCRUD.JWTAuth.Repos;
-using Microsoft.EntityFrameworkCore;
+using BaseCRUD.JWTAuth.Services;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
-using System.Net;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
+using Microsoft.IdentityModel.Tokens;
+using Scalar.AspNetCore;
+using System.Net;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+var maxSessiontime = TimeSpan.FromHours(8);
 
 // Add services to the container.
 
@@ -65,6 +67,25 @@ builder.Services.AddAuthentication(options =>
             {
                 context.Response.StatusCode = StatusCodes.Status403Forbidden;
                 return Task.CompletedTask;
+            };
+
+            options.Events.OnValidatePrincipal = async context =>
+            {
+                var now = DateTimeOffset.UtcNow;
+                DateTimeOffset? issuedAt = context.Properties.IssuedUtc; if (!issuedAt.HasValue)
+                {
+                    var rawIssuedUnix = context.Principal?.FindFirst("issued_utc")?.Value;
+                    if (long.TryParse(rawIssuedUnix, out var unixSeconds))
+                    {
+                        issuedAt = DateTimeOffset.FromUnixTimeSeconds(unixSeconds);
+                    }
+                }
+
+                if (issuedAt.HasValue && now - issuedAt.Value > maxSessiontime)
+                {
+                    context.RejectPrincipal();
+                    await context.HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+                }
             };
         }).AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
 {

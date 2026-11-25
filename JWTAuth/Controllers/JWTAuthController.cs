@@ -11,6 +11,7 @@ namespace BaseCRUD.JWTAuth.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize, AllowAnonymous]
     public class JWTAuthController : ControllerBase
     {
         private readonly JWTService _jwtService;
