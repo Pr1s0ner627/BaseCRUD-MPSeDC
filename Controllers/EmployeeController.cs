@@ -47,10 +47,12 @@ namespace BaseCRUD.Controllers
             if (!isPasswordValid)
                 return Unauthorized("Invalid email or password.");
 
+            var now = DateTimeOffset.UtcNow;
             List<Claim> claims = [
                 new(ClaimTypes.NameIdentifier, user.UserId.ToString()),
                 new(ClaimTypes.Name, user.DisplayName),
-                new(ClaimTypes.Email, user.NormalizedEmail)];
+                new(ClaimTypes.Email, user.NormalizedEmail),
+                new("issued_Utc",now.ToUnixTimeSeconds().ToString())];
 
             var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             var principal = new ClaimsPrincipal(identity);
@@ -60,6 +62,7 @@ namespace BaseCRUD.Controllers
             {
                 IsPersistent = true,
                 AllowRefresh = true,
+                IssuedUtc = now
             });
 
             return Ok(new
