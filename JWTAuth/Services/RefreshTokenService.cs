@@ -2,6 +2,7 @@
 using BaseCRUD.JWTAuth.Repos;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.WebUtilities;
+using System.Runtime.Intrinsics.Arm;
 using System.Security.Cryptography;
 
 namespace BaseCRUD.JWTAuth.Services
@@ -31,26 +32,22 @@ namespace BaseCRUD.JWTAuth.Services
             return refreshToken;
         }
 
-        public async Task<RefreshTokens?> ValidateRefreshTokenAsync(string token)
+        public async Task<RefreshTokens?> FindAsync(string token)
         {
             if (string.IsNullOrWhiteSpace(token))
                 return null;
 
-            byte[] tokenBytes;
-            
-            try
-            {
-                tokenBytes = WebEncoders.Base64UrlDecode(token);
-            } catch(FormatException)
-            {
-                return null;
-            }
+            byte[] bytes;
+            try { bytes = WebEncoders.Base64UrlDecode(token); }
+            catch (FormatException) { return null; }
+            if (bytes.Length != 32) return null;
 
-            if(tokenBytes.Length !=32)
-                return null;
+            return await _refreshTokenRepository.GetByTokenHashAsync(SHA256.HashData(bytes));
+        }
 
-            byte[] tokenHash = SHA256.HashData(tokenBytes);
-            var storedToken = await _refreshTokenRepository.GetByTokenHashAsync(tokenHash);
+        public async Task<RefreshTokens?> ValidateRefreshTokenAsync(string token)
+        {
+            var storedToken = await FindAsync(token);
             if(storedToken == null || storedToken.ExpiresAt <= DateTime.UtcNow || storedToken.UserId != null)
                 return null;
 
@@ -59,7 +56,7 @@ namespace BaseCRUD.JWTAuth.Services
 
         public async Task<RefreshTokenRotationResult?> RotateRefreshTokenAsync(string token)
         {
-            var storeToken = await ValidateRefreshTokenAsync(token);
+            var storeToken = await FindAsync(token);
 
             if (storeToken == null)
                 return null;
@@ -76,7 +73,7 @@ namespace BaseCRUD.JWTAuth.Services
 
         public async Task RevokeRefreshTokenAsync(string token)
         {
-            var storedToken = await ValidateRefreshTokenAsync(token);
+            var storedToken = await FindAsync(token);
 
             if(storedToken != null)
                 await _refreshTokenRepository.RevokeAsync(storedToken.TokenId);
