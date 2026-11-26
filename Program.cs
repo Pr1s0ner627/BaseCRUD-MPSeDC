@@ -5,6 +5,7 @@ using BaseCRUD.Databases;
 using BaseCRUD.JWTAuth.Models;
 using BaseCRUD.JWTAuth.Repos;
 using BaseCRUD.JWTAuth.Services;
+using BaseCRUD.Repos;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -27,9 +28,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))); //Is it safe? pool or Factory
 builder.Services.AddSingleton<SQLConnectionFactory>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
 builder.Services.AddScoped<PasswordService>();
 builder.Services.AddScoped<JWTService>();
-builder.Services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
 builder.Services.AddScoped<RefreshTokenService>();
 
 builder.Services.AddOptions<JWTSettings>()

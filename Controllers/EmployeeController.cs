@@ -4,9 +4,9 @@ using BaseCRUD.CookieAuth.Services;
 using BaseCRUD.Databases;
 using BaseCRUD.JWTAuth.Controllers;
 using BaseCRUD.JWTAuth.Services;
+using BaseCRUD.Repos;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -21,13 +21,15 @@ namespace BaseCRUD.Controllers
     {
         private readonly JWTService _jWTService;
         private readonly PasswordService _passwordService;
+        private readonly IEmployeeRepository _employeeRepository;
         private readonly IUserRepository _userRepository;
 
-        public EmployeeController(PasswordService passwordService, IUserRepository userRepository, JWTService jWTService)
+        public EmployeeController(PasswordService passwordService, IEmployeeRepository employeeRepository, JWTService jWTService, IUserRepository userRepository)
         {
             _passwordService = passwordService;
+            _employeeRepository = employeeRepository;
+            _jWTService = jWTService;
             _userRepository = userRepository;
-            _jWTService = jWTService; 
         }
 
         
@@ -76,18 +78,17 @@ namespace BaseCRUD.Controllers
             });
         }
 
-
-        //[HttpGet]
-        //public async Task<ActionResult> GetAll()
-        //{
-        //    var employees = await databaseContext.Employees.ToListAsync();
-        //    return Ok(employees);
-        //}
+        [HttpGet("GetAll")]
+        public async Task<ActionResult> GetAll()
+        {
+            var employees = await _employeeRepository.GetAllAsync();
+            return Ok(employees);
+        }
 
         //[HttpGet("{id}")]
         //public async Task<ActionResult<Employee>> GetEmployee(int id)
         //{
-        //    var entry = await databaseContext.Employees.FirstOrDefaultAsync(x => x.Id == id);
+        //    var entry = await _employeeRepository.FirstOrDefaultAsync(x => x.Id == id);
 
         //    if (entry == null)
         //        return NotFound();

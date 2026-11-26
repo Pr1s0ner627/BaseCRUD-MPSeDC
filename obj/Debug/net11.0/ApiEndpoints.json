@@ -131,6 +131,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BaseCRUD.Controllers.EmployeeController",
+    "Method": "GetAll",
+    "RelativePath": "Employee/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BaseCRUD.JWTAuth.Controllers.JWTAuthController",
     "Method": "LoginJWT",
     "RelativePath": "JWTAuth/login-jwt",
