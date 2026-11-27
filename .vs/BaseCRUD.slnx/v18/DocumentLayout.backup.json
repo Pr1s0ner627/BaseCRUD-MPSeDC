@@ -3,18 +3,6 @@
   "WorkspaceRootPath": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\repos\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:repos\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\databases\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:databases\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,24 +11,16 @@
       "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:repos\\iemployeerespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\jwtauth\\models\\refreshtokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:jwtauth\\models\\refreshtokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\repos\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:repos\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\cookieauth\\repos\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:cookieauth\\repos\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\jwtauth\\controllers\\jwtauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:jwtauth\\controllers\\jwtauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\jwtauth\\services\\refreshtokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:jwtauth\\services\\refreshtokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\cookieauth\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:cookieauth\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|c:\\dotnet tutorials\\basecrud-mpsedc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A888648D-3F4B-7AED-7F94-BF53D1E0B14E}|BaseCRUD.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,8 +30,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 209,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IEmployeeRespository.cs",
+              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Repos\\IEmployeeRespository.cs",
+              "RelativeDocumentMoniker": "Repos\\IEmployeeRespository.cs",
+              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Repos\\IEmployeeRespository.cs",
+              "RelativeToolTip": "Repos\\IEmployeeRespository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-27T06:15:42.359Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -59,6 +53,48 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Repos\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "Repos\\EmployeeRepository.cs",
+              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Repos\\EmployeeRepository.cs",
+              "RelativeToolTip": "Repos\\EmployeeRepository.cs",
+              "ViewState": "AgIAAA8AAACgmZmZmZktwIcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-27T05:16:06.144Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAAGAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T05:27:51.155Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\CookieAuth\\Repos\\UserRepository.cs",
+              "RelativeDocumentMoniker": "CookieAuth\\Repos\\UserRepository.cs",
+              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\CookieAuth\\Repos\\UserRepository.cs",
+              "RelativeToolTip": "CookieAuth\\Repos\\UserRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-27T06:16:10.93Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -67,129 +103,6 @@
               "ViewState": "AgIAABAAAAAAZmZmZmYkwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-19T09:26:45.107Z",
-              "EditorCaption": "",
-              "OwnerCaption": "%2"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EmployeeRepository.cs",
-              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Repos\\EmployeeRepository.cs",
-              "RelativeDocumentMoniker": "Repos\\EmployeeRepository.cs",
-              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Repos\\EmployeeRepository.cs",
-              "RelativeToolTip": "Repos\\EmployeeRepository.cs",
-              "ViewState": "AgIAACAAAADAzMzMzMwswDwAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-26T08:02:35.762Z",
-              "EditorCaption": "",
-              "OwnerCaption": "%2"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Databases\\Employee.cs",
-              "RelativeDocumentMoniker": "Databases\\Employee.cs",
-              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Databases\\Employee.cs",
-              "RelativeToolTip": "Databases\\Employee.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAgwB0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-26T08:33:59.932Z",
-              "EditorCaption": "",
-              "OwnerCaption": "%2"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EmployeeController.cs",
-              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Controllers\\EmployeeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
-              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T05:27:51.155Z",
-              "EditorCaption": "",
-              "OwnerCaption": "%2"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IEmployeeRespository.cs",
-              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Repos\\IEmployeeRespository.cs",
-              "RelativeDocumentMoniker": "Repos\\IEmployeeRespository.cs",
-              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Repos\\IEmployeeRespository.cs",
-              "RelativeToolTip": "Repos\\IEmployeeRespository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-26T08:01:37.898Z",
-              "EditorCaption": "",
-              "OwnerCaption": "%2"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RefreshTokens.cs",
-              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\JWTAuth\\Models\\RefreshTokens.cs",
-              "RelativeDocumentMoniker": "JWTAuth\\Models\\RefreshTokens.cs",
-              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\JWTAuth\\Models\\RefreshTokens.cs",
-              "RelativeToolTip": "JWTAuth\\Models\\RefreshTokens.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-26T08:42:59.749Z",
-              "EditorCaption": "",
-              "OwnerCaption": "%2"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-11-25T12:08:18.092Z",
-              "OwnerCaption": "%2"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "JWTAuthController.cs",
-              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\JWTAuth\\Controllers\\JWTAuthController.cs",
-              "RelativeDocumentMoniker": "JWTAuth\\Controllers\\JWTAuthController.cs",
-              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\JWTAuth\\Controllers\\JWTAuthController.cs",
-              "RelativeToolTip": "JWTAuth\\Controllers\\JWTAuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-20T11:02:42.403Z",
-              "OwnerCaption": "%2"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RefreshTokenService.cs",
-              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\JWTAuth\\Services\\RefreshTokenService.cs",
-              "RelativeDocumentMoniker": "JWTAuth\\Services\\RefreshTokenService.cs",
-              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\JWTAuth\\Services\\RefreshTokenService.cs",
-              "RelativeToolTip": "JWTAuth\\Services\\RefreshTokenService.cs",
-              "ViewState": "AgIAAAkAAACgmZmZmZknwDsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-25T05:08:38.749Z",
-              "OwnerCaption": "%2"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PasswordService.cs",
-              "DocumentMoniker": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\CookieAuth\\Services\\PasswordService.cs",
-              "RelativeDocumentMoniker": "CookieAuth\\Services\\PasswordService.cs",
-              "ToolTip": "C:\\DotNet Tutorials\\BaseCRUD-MPSeDC\\CookieAuth\\Services\\PasswordService.cs",
-              "RelativeToolTip": "CookieAuth\\Services\\PasswordService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T06:31:00.618Z",
               "OwnerCaption": "%2"
             }
           ]

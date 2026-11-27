@@ -106,6 +106,5 @@ namespace BaseCRUD.CookieAuth.Repos
                 IsActive = reader.GetBoolean(reader.GetOrdinal("IsActive"))
             };
         }
-
     }
 }

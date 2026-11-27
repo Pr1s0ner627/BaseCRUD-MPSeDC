@@ -364,7 +364,6 @@ C:\DotNet Tutorials\BaseCRUD-MPSeDC\obj\Debug\net11.0\jsmodules\jsmodules.build.
 C:\DotNet Tutorials\BaseCRUD-MPSeDC\obj\Debug\net11.0\scopedcss\scopedcss.cache
 C:\DotNet Tutorials\BaseCRUD-MPSeDC\obj\Debug\net11.0\scopedcss\bundle\BaseCRUD.styles.css
 C:\DotNet Tutorials\BaseCRUD-MPSeDC\obj\Debug\net11.0\compressed\2kkew29zii-{0}-tchfgznwy8-tchfgznwy8.gz
-C:\DotNet Tutorials\BaseCRUD-MPSeDC\obj\Debug\net11.0\compressed\r2gdyn3cmh-{0}-m1xbpkxutd-m1xbpkxutd.gz
 C:\DotNet Tutorials\BaseCRUD-MPSeDC\obj\Debug\net11.0\compressed\h3j922srzz-{0}-v1vy2to33n-v1vy2to33n.gz
 C:\DotNet Tutorials\BaseCRUD-MPSeDC\obj\Debug\net11.0\compressed\5botqhdelb-{0}-ysew0n4kjn-ysew0n4kjn.gz
 C:\DotNet Tutorials\BaseCRUD-MPSeDC\obj\Debug\net11.0\staticwebassets.build.json
@@ -379,3 +378,4 @@ C:\DotNet Tutorials\BaseCRUD-MPSeDC\obj\Debug\net11.0\refint\BaseCRUD.dll
 C:\DotNet Tutorials\BaseCRUD-MPSeDC\obj\Debug\net11.0\BaseCRUD.pdb
 C:\DotNet Tutorials\BaseCRUD-MPSeDC\obj\Debug\net11.0\BaseCRUD.genruntimeconfig.cache
 C:\DotNet Tutorials\BaseCRUD-MPSeDC\obj\Debug\net11.0\ref\BaseCRUD.dll
+C:\DotNet Tutorials\BaseCRUD-MPSeDC\obj\Debug\net11.0\compressed\r2gdyn3cmh-{0}-bf1th1h9ng-bf1th1h9ng.gz

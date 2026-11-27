@@ -85,10 +85,10 @@ namespace BaseCRUD.Controllers
             return Ok(employees);
         }
 
-        //[HttpGet("{id}")]
+        //[HttpGet("GetbyId/{id}")]
         //public async Task<ActionResult<Employee>> GetEmployee(int id)
         //{
-        //    var entry = await _employeeRepository.FirstOrDefaultAsync(x => x.Id == id);
+        //    var entry = await _employeeRepository.GetbyIdAsync(id);
 
         //    if (entry == null)
         //        return NotFound();
@@ -109,32 +109,22 @@ namespace BaseCRUD.Controllers
         //    return NoContent();
         //}
 
-        //[HttpPost]
-        //public async Task<ActionResult<Employee>> AddEmployee(Employee newEmployee)
-        //{
-        //    databaseContext.Employees.Add(newEmployee);
-        //    databaseContext.SaveChangesAsync();
+        [HttpPost("AddUser")]
+        public async Task<ActionResult<Employee>> AddEmployee(Employee newEmployee)
+        {
+            int newEmployeeID = await _employeeRepository.CreateAsync(newEmployee);
+            newEmployee.Id = newEmployeeID;
+            return CreatedAtAction(nameof(GetAll), new { id = newEmployee.Id }, newEmployee);
+        }
 
-        //    return CreatedAtAction(nameof(GetEmployee), new { id = newEmployee.Id }, newEmployee);
-        //}
+        [HttpPut("{id}")]
+        public async Task<ActionResult> UpdateEmployee([FromRoute] int id, [FromBody] Employee updatedEmployee)
+        {
+            bool employeeToUpdate = await _employeeRepository.UpdateAsync(id, updatedEmployee);
+            if (employeeToUpdate == null)
+                return NotFound();
 
-        //[HttpPut("{id}")]
-        //public async Task<ActionResult> UpdateEmployee([FromRoute] int id, [FromBody] Employee updatedEmployee)
-        //{
-        //    var employeeToUpdate = await databaseContext.Employees.FirstOrDefaultAsync(x => x.Id == id);
-        //    if (employeeToUpdate == null)
-        //        return NotFound();
-
-        //    employeeToUpdate.Name = updatedEmployee.Name;
-        //    employeeToUpdate.Email = updatedEmployee.Email;
-        //    employeeToUpdate.Designation = updatedEmployee.Designation;
-        //    employeeToUpdate.Salary = updatedEmployee.Salary;
-        //    employeeToUpdate.DepartmentId = updatedEmployee.DepartmentId;
-        //    employeeToUpdate.ManagerId = updatedEmployee.ManagerId;
-        //    employeeToUpdate.IsActive = updatedEmployee.IsActive;
-
-        //    await databaseContext.SaveChangesAsync();
-        //    return Ok();
-        //}
+            return NoContent();
+        }
     }
 }

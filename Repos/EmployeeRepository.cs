@@ -3,6 +3,9 @@ using BaseCRUD.CookieAuth.Models;
 using BaseCRUD.CookieAuth.Repos;
 using BaseCRUD.Databases;
 using Microsoft.Data.SqlClient;
+using System.Reflection.PortableExecutable;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace BaseCRUD.Repos
 {
@@ -67,5 +70,69 @@ namespace BaseCRUD.Repos
 
             return employees;
         }
+
+        public async Task<int> CreateAsync(Employee employee)
+        {
+            const string query = @"INSERT INTO Employees (
+                    EmployeeName,
+                    EmployeeEmail,
+                    Designation,
+                    Salary,
+                    ManagerID,
+                    IsActive,
+                    DepartmentID) OUTPUT INSERTED.EmployeeID VALUES (@EmployeeName,
+                    @EmployeeEmail,
+                    @Designation,
+                    @Salary,
+                    @ManagerID,
+                    @IsActive,
+                    @DepartmentID);";
+
+            await using var connection = _connectionFactory.CreateConnection();
+            await connection.OpenAsync();
+
+            await using var command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@EmployeeName", employee.Name);
+            command.Parameters.AddWithValue("@EmployeeEmail", employee.Email);
+            command.Parameters.AddWithValue("@Designation", employee.Designation);
+            command.Parameters.AddWithValue("@Salary", employee.Salary);
+            command.Parameters.AddWithValue("@ManagerID", employee.ManagerId);
+            command.Parameters.AddWithValue("@IsActive", employee.IsActive);
+            command.Parameters.AddWithValue("@DepartmentID", employee.DepartmentId);
+
+            object? result = await command.ExecuteScalarAsync();
+            return Convert.ToInt32(result);
+        }
+
+        public async Task<bool> UpdateAsync(int employeeId, Employee employee)
+        {
+            const string query = @"
+                    UPDATE Employees
+                    SET
+                    EmployeeName = @EmployeeName,
+                    EmployeeEmail = @EmployeeEmail,
+                    Designation = @Designation,
+                    Salary = @Salary,
+                    ManagerID = @ManagerID,
+                    IsActive = @IsActive,
+                    DepartmentID = @DepartmentID
+                    WHERE EmployeeID = @EmployeeId;";
+            await using var connection = _connectionFactory.CreateConnection();
+            await connection.OpenAsync();
+
+            await using var command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@EmployeeID", employeeId);
+            command.Parameters.AddWithValue("@EmployeeName", employee.Name);
+            command.Parameters.AddWithValue("@EmployeeEmail", employee.Email);
+            command.Parameters.AddWithValue("@Designation", employee.Designation);
+            command.Parameters.AddWithValue("@Salary", employee.Salary);
+            command.Parameters.AddWithValue("@ManagerID", (object?)employee.ManagerId??DBNull.Value);
+            command.Parameters.AddWithValue("@IsActive", employee.IsActive);
+            command.Parameters.AddWithValue("@DepartmentID", employee.DepartmentId);
+
+            int rowsAffected = await command.ExecuteNonQueryAsync();
+            return rowsAffected > 0;
+        }
+
     }
 }
